@@ -1,6 +1,8 @@
 ## Background
 During the period of November 2018-January 2019, I interned in the Hardware and Embedded Systems Lab at NTU, Singapore. Under the esteemed guidance of Dr Nirmala Radhkrishnan and Professor Thambipillai Srikanthan, I worked on building a tool to automatically detect and mark lanes in roads based on feed from surveillance cameras. Although the dataset I worked with is proprietory, the script I wrote is available here.
 
+An important restriction was that the inferencing was supposed to be executed on a chip on the edge. Hence, we avoided computation-heavy ML models and stuck to using simple functions from OpenCV.
+
 ## Nature of Data
 The data-set consisted of videos of elevated roads taken from an elevated angle. All videos were taken in day-light in varying contrast and brightness. Some videos were taken at signals with higher traffic, whereas some videos were taken in free-ways. A notable characteristic in some videos were the bus lanes, with the buses stopping for quite a long period of time.  
 
